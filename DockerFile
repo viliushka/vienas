@@ -1,8 +1,8 @@
 #Version 0.1.0
 FROM ubuntu:latest
-MAINTAINER vilius.dudenas@virtustream.com
+MAINTAINER emeil@emeil.com
 
-RUN SED -i.bak 's/main$/main universe/' /etc/apt/sources.list
+RUN sed -i.bak 's/main$/main universe/' /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get upgrade -y
 
